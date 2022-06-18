@@ -17,6 +17,8 @@ print(author)
 print("------------------------------------------------------------------------------------------------")
 print("(Closest color) name: " + r.json()["name"]['value']) #Prints the name
 print("------------------------------------------------------------------------------------------------")
+print("Is actual color name: " + r.json()["name"]["exact_match_name"]) #This will be false 99% of the time from testing
+print("------------------------------------------------------------------------------------------------")
 print("Hex: " + r.json()["hex"]["value"]) #Prints the hex code
 print("------------------------------------------------------------------------------------------------")
 print(f"Red: {red}, Green: {blue}, Blue: {green}") #Prints the RGB values
@@ -26,3 +28,4 @@ print("-------------------------------------------------------------------------
 print("Image: " + r.json()["image"]["named"]) #Prints the link to the image
 print("------------------------------------------------------------------------------------------------")
 print("Image: " + r.json()["image"]["named"]) #Prints the link to the image
+print("------------------------------------------------------------------------------------------------")
